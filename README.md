@@ -1,7 +1,7 @@
 # Storybook Addon description
 Add description to panel
 
-![Снимок экрана 2024-05-02 в 23.14.37.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2F6p%2F955frkv103b3j0s9lzlxxjjc0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_TwszSQ%2F%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-05-02%20%D0%B2%2023.14.37.png)
+![Preview](./preview.png)
 
 ## Installation
 
