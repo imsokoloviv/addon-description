@@ -1,17 +1,19 @@
 {
-  "name": "storybook-addon-kit",
+  "name": "storybook-addon-description",
   "version": "0.0.0",
-  "description": "everything you need to build a Storybook addon",
+  "description": "Add description to panel",
   "keywords": [
+    "storybook-addons",
+    "descripion",
     "storybook-addons"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook-addon-kit"
+    "url": "https://github.com/imsokoloviv/addon-description"
   },
   "type": "module",
   "license": "MIT",
-  "author": "package-author",
+  "author": "s4 <imsokoloviv.w@gmail.com>",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -34,7 +36,6 @@
     "*.d.ts"
   ],
   "scripts": {
-    "postinstall": "node scripts/welcome.js",
     "build": "tsup",
     "build:watch": "npm run build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -97,10 +98,14 @@
     ]
   },
   "storybook": {
-    "displayName": "Addon Kit",
+    "displayName": "description",
     "supportedFrameworks": [
-      "supported-frameworks"
+      "react"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
+  },
+  "dependencies": {
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0"
   }
 }

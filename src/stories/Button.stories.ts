@@ -8,7 +8,7 @@ const meta: Meta<typeof Button> = {
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: "color" },
+    backgroundColor: { control: "color" }
   },
   tags: ["autodocs"],
   parameters: {
@@ -16,8 +16,8 @@ const meta: Meta<typeof Button> = {
 <MyComponent boolProp scalarProp={1} complexProp={{ foo: 1, bar: '2' }}>
   <SomeOtherComponent funcProp={(a) => a.id} />
 </MyComponent>
-`,
-  },
+`
+  }
 };
 
 export default meta;
@@ -28,26 +28,56 @@ export const Primary: Story = {
   // More on args: https://storybook.js.org/docs/react/writing-stories/args
   args: {
     primary: true,
-    label: "Button",
+    label: "Button"
   },
+  parameters: { description: `
+# GFM
+
+## Autolink literals
+
+www.example.com, https://example.com, and contact@example.com.
+
+## Footnote
+
+A note[^1]
+
+[^1]: Big note.
+
+## Strikethrough
+
+~one~ or ~~two~~ tildes.
+
+## Table
+
+| a | b  |  c |  d  |
+| - | :- | -: | :-: |
+
+## Tasklist
+
+* [ ] to do
+* [x] done
+` }
 };
 
 export const Secondary: Story = {
   args: {
-    label: "Button",
-  },
+    label: "Button"
+  }
 };
 
 export const Large: Story = {
   args: {
     size: "large",
-    label: "Button",
-  },
+    label: "Button"
+  }
 };
 
 export const Small: Story = {
   args: {
     size: "small",
-    label: "Button",
+    label: "Button"
   },
+  parameters: {
+    description: `## Description`
+  }
 };
