@@ -1,5 +1,5 @@
 {
-  "name": "storybook-addon-description",
+  "name": "@storybook/addon-description",
   "version": "0.0.0",
   "description": "Add description to panel",
   "keywords": [
