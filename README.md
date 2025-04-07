@@ -85,3 +85,5 @@ A note[^1]
 };
 
 ```
+
+However, but default Storybook supports individual [stories for components](https://storybook.js.org/docs/api/doc-blocks/doc-block-description#writing-descriptions) so it will automatically fallback to the Storybook docs values if a description parameter is not found.
