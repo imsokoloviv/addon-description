@@ -8,7 +8,13 @@ interface PanelContentProps {
 }
 
 export const PanelContent: React.FC<PanelContentProps> = (props) => {
-  const description =  useParameter<string>("description");
+  const paramsDescription =  useParameter<string>("description");
+
+  const docs = useParameter<{ description: { story?: string; component?: string; } }>('docs')
+  const storyDescription = docs && docs.description && docs.description.story;
+  const componentDescription = docs && docs.description && docs.description.component;
+  
+  const description = paramsDescription || storyDescription || componentDescription || null;
 
   if (!description) return  null;
 
